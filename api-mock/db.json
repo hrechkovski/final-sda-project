@@ -1,0 +1,39 @@
+{
+  "workers": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Rambo",
+      "salary": 5000,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Mark",
+      "surname": "Doe",
+      "salary": 4000,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Anna",
+      "surname": "Kowalska",
+      "salary": 4500,
+      "status": "maternity leave"
+    },
+    {
+      "id": 4,
+      "name": "Mike",
+      "surname": "Jackson",
+      "salary": 7000,
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "Cesar",
+      "surname": "Rodriguez",
+      "salary": 5500,
+      "status": "active"
+    }
+  ]
+}
