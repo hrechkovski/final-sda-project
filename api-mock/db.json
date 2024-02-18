@@ -1,0 +1,104 @@
+{
+  "workers": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Rambo",
+      "salary": 5000,
+      "status": "active",
+      "birthDate": "1987-03-23",
+      "city": "Opole",
+      "phoneNumber": 123456789
+    },
+    {
+      "id": 2,
+      "name": "Walt",
+      "surname": "Kowalski",
+      "salary": 4000,
+      "status": "active",
+      "birthDate": "1978-05-21",
+      "city": "Katowice",
+      "phoneNumber": 122456789
+    },
+    {
+      "id": 3,
+      "name": "Anna",
+      "surname": "Kowalska",
+      "salary": 4500,
+      "status": "maternity leave",
+      "birthDate": "1985-01-12",
+      "city": "Warsaw",
+      "phoneNumber": 223456789
+    },
+    {
+      "id": 4,
+      "name": "Mike",
+      "surname": "Jackson",
+      "salary": 7000,
+      "status": "active",
+      "birthDate": "1999-11-20",
+      "city": "Stalowa Wola",
+      "phoneNumber": 123456788
+    },
+    {
+      "id": 5,
+      "name": "Penny",
+      "surname": "Wise",
+      "salary": 5500,
+      "status": "inactive",
+      "birthDate": "1994-01-23",
+      "city": "Bydgoszcz",
+      "phoneNumber": 123456799
+    },
+    {
+      "id": 6,
+      "name": "Han",
+      "surname": "Solo",
+      "salary": 9500,
+      "status": "active",
+      "birthDate": "1975-01-04",
+      "city": "Sopot",
+      "phoneNumber": 123486739
+    },
+    {
+      "id": 7,
+      "name": "Jack",
+      "surname": "Doors",
+      "salary": 8000,
+      "status": "inactive",
+      "birthDate": "1995-07-10",
+      "city": "Rewal",
+      "phoneNumber": 123556799
+    },
+    {
+      "id": 8,
+      "name": "Adam",
+      "surname": "Niezgoda",
+      "salary": 3700,
+      "status": "active",
+      "birthDate": "1985-08-28",
+      "city": "Zakopane",
+      "phoneNumber": 123456299
+    },
+    {
+      "id": 9,
+      "name": "Peter",
+      "surname": "Parker",
+      "salary": 10000,
+      "status": "active",
+      "birthDate": "1990-05-13",
+      "city": "Nysa",
+      "phoneNumber": 123416799
+    },
+    {
+      "id": 10,
+      "name": "Randle",
+      "surname": "McMurphy",
+      "salary": 8500,
+      "status": "active",
+      "birthDate": "1970-09-01",
+      "city": "Bytom",
+      "phoneNumber": 123956799
+    }
+  ]
+}
