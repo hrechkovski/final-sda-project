@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { Worker } from "../worker/Worker";
 
 export const ListWorkers = () => {
-  const [workers, setWorkers] = useState([]);
-  // const workers = [];
-  // const setWorkers = () => {};
+  const [workersData, setWorkersData] = useState([]);
+  const workersDataRender = workersData.map((worker) => (
+    <Worker key={worker.id} worker={worker} />
+  ));
+
   useEffect(() => {
     fetch("http://localhost:8000/workers")
       .then((response) => {
@@ -15,7 +17,7 @@ export const ListWorkers = () => {
         }
       })
       .then((data) => {
-        setWorkers(data);
+        setWorkersData(data);
       })
       .catch((err) => {
         console.error(err);
@@ -23,10 +25,19 @@ export const ListWorkers = () => {
   }, []);
 
   return (
-    <article>
-      {workers.map((worker) => (
-        <Worker key={worker.id} worker={worker} />
-      ))}
-    </article>
+    <>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Salary</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        {workersDataRender}
+      </table>
+    </>
   );
 };
