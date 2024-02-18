@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Worker } from "../worker/Worker";
 
-export const ListWorkers = () => {
+export const WorkersList = () => {
   const [workersData, setWorkersData] = useState([]);
-  const workersDataRender = workersData.map((worker) => (
+  const workersElements = workersData.map((worker) => (
     <Worker key={worker.id} worker={worker} />
   ));
 
@@ -36,7 +36,7 @@ export const ListWorkers = () => {
             <th>Status</th>
           </tr>
         </thead>
-        {workersDataRender}
+        {workersElements}
       </table>
     </>
   );

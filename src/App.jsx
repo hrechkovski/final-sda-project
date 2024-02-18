@@ -1,10 +1,10 @@
-import { ListWorkers } from "./pages/listWorkers/ListWorkers";
+import { WorkersList } from "./pages/workersList/WorkersList";
 
 function App() {
   return (
     <div>
       <h1>List of current workers in Radpol</h1>
-      <ListWorkers />
+      <WorkersList />
     </div>
   );
 }
