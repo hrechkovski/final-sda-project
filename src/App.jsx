@@ -1,11 +1,13 @@
-import { WorkersList } from "./pages/workersList/WorkersList";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/home/Home";
+import { WorkerDetails } from "./pages/workerDetails/WorkerDetails";
 
 function App() {
   return (
-    <div>
-      <h1>List of current workers in Radpol</h1>
-      <WorkersList />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/workers/:id" element={<WorkerDetails />} />
+    </Routes>
   );
 }
 

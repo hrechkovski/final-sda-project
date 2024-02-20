@@ -34,6 +34,7 @@ export const WorkersList = () => {
             <th>Surname</th>
             <th>Salary</th>
             <th>Status</th>
+            <th>Details</th>
           </tr>
         </thead>
         {workersElements}
