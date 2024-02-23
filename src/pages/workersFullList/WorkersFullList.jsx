@@ -1,9 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Worker } from "../worker/Worker";
+import { SearchWorkersContext } from "../context/SearchWorkersContext";
 
-export const WorkersList = () => {
+export const WorkersFullList = () => {
   const [workersData, setWorkersData] = useState([]);
-  const workersElements = workersData.map((worker) => (
+  const { searchPhrase } = useContext(SearchWorkersContext);
+  const workersToDisplay =
+    searchPhrase.length === 0
+      ? workersData
+      : workersData.filter(
+          (workerData) =>
+            workerData.name
+              .toLocaleLowerCase()
+              .match(searchPhrase.toLocaleLowerCase()) ||
+            workerData.surname
+              .toLocaleLowerCase()
+              .match(searchPhrase.toLocaleLowerCase()) ||
+            workerData.status
+              .toLocaleLowerCase()
+              .match(searchPhrase.toLocaleLowerCase())
+        );
+  const workersElements = workersToDisplay.map((worker) => (
     <Worker key={worker.id} worker={worker} />
   ));
 
