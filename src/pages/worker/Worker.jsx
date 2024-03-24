@@ -1,4 +1,7 @@
-export const Worker = ({ worker }) => {
+import { Link } from "react-router-dom";
+
+export const Worker = (props) => {
+  const { worker } = props;
   return (
     <tbody>
       <tr>
@@ -7,6 +10,9 @@ export const Worker = ({ worker }) => {
         <td>{worker.surname}</td>
         <td>{worker.salary}</td>
         <td>{worker.status}</td>
+        <td>
+          <Link to={`/workers/${worker.id}`}>Show details</Link>
+        </td>
       </tr>
     </tbody>
   );
